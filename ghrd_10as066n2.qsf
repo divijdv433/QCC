@@ -1,0 +1,1332 @@
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Qus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+# Date created = 10:52:43  January 13, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ghrd_10as066n2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Arria 10"
+set_global_assignment -name DEVICE 10AS048H3F34I2SG
+set_global_assignment -name TOP_LEVEL_ENTITY ghrd_10as066n2_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:52:43  JANUARY 13, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name INI_VARS "ASM_ENABLE_ADVANCED_DEVICES=ON"
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE cti_tapping.stp
+
+set_instance_assignment -name IO_STANDARD "1.5 V" -to clk_100_clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_clk_100
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_reset_n
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_dipsw_pio[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_dipsw_pio[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_dipsw_pio[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_dipsw_pio[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_led_pio[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_led_pio[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_led_pio[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_led_pio[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_button_pio[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_button_pio[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_button_pio[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fpga_button_pio[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_CMD
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_sdio_D7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TX_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TX_CTL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TXD0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TXD1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TXD2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_TXD3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RX_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RX_CTL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RXD0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RXD1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RXD2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_RXD3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_MDC
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac0_MDIO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_spim1_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_spim1_MOSI
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_spim1_MISO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_spim1_SS0_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_spim1_SS1_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_uart1_TX
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_uart1_RX
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_DIR
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_NXT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_STP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb0_D7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_i2c1_SDA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_i2c1_SCL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_gpio_GPIO05
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_gpio_GPIO14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_gpio_GPIO16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_gpio_GPIO17
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_trace_CLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_trace_D0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_trace_D1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_trace_D2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_trace_D3
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_CLK
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_CMD
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_D0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_D1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_D2
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to hps_sdio_D3
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to hps_sdio_D4
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to hps_sdio_D5
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to hps_sdio_D6
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to hps_sdio_D7
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_CLK
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_CMD
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_D0
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_D1
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_D2
+set_instance_assignment -name SLEW_RATE 1 -to hps_sdio_D3
+set_instance_assignment -name OUTPUT_DELAY_CHAIN 8 -to hps_emac0_TX_CLK
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "1.8 V"
+#set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[16]
+
+set_location_assignment PIN_E23 -to ddr3_pll_inclk0
+set_location_assignment PIN_E24 -to "ddr3_pll_inclk0(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to ddr3_pll_inclk0
+
+set_location_assignment PIN_D27 -to hps_memory_mem_a[14]
+set_location_assignment PIN_E27 -to hps_memory_mem_a[13]
+set_location_assignment PIN_F24 -to hps_memory_mem_a[12]
+set_location_assignment PIN_F26 -to hps_memory_mem_a[11]
+set_location_assignment PIN_G26 -to hps_memory_mem_a[10]
+set_location_assignment PIN_J22 -to hps_memory_mem_a[9]
+set_location_assignment PIN_H22 -to hps_memory_mem_a[8]
+set_location_assignment PIN_H23 -to hps_memory_mem_a[7]
+set_location_assignment PIN_H24 -to hps_memory_mem_a[6]
+set_location_assignment PIN_G25 -to hps_memory_mem_a[5]
+set_location_assignment PIN_H25 -to hps_memory_mem_a[4]
+set_location_assignment PIN_G22 -to hps_memory_mem_a[3]
+set_location_assignment PIN_G23 -to hps_memory_mem_a[2]
+set_location_assignment PIN_G27 -to hps_memory_mem_a[1]
+set_location_assignment PIN_H27 -to hps_memory_mem_a[0]
+set_location_assignment PIN_C25 -to hps_memory_mem_ba[2]
+set_location_assignment PIN_D25 -to hps_memory_mem_ba[1]
+set_location_assignment PIN_D26 -to hps_memory_mem_ba[0]
+
+set_location_assignment PIN_J27 -to hps_memory_mem_cke
+set_location_assignment PIN_K24 -to hps_memory_mem_cs_n
+
+set_location_assignment PIN_AJ27 -to hps_memory_mem_dq[31]
+set_location_assignment PIN_AH27 -to hps_memory_mem_dq[30]
+set_location_assignment PIN_AD24 -to hps_memory_mem_dq[29]
+set_location_assignment PIN_AJ26 -to hps_memory_mem_dq[28]
+set_location_assignment PIN_AH26 -to hps_memory_mem_dq[27]
+set_location_assignment PIN_AJ25 -to hps_memory_mem_dq[26]
+set_location_assignment PIN_AH25 -to hps_memory_mem_dq[25]
+set_location_assignment PIN_AE24 -to hps_memory_mem_dq[24]
+set_location_assignment PIN_AL26 -to hps_memory_mem_dq[23]
+set_location_assignment PIN_AP26 -to hps_memory_mem_dq[22]
+set_location_assignment PIN_AP27 -to hps_memory_mem_dq[21]
+set_location_assignment PIN_AP25 -to hps_memory_mem_dq[20]
+set_location_assignment PIN_AN25 -to hps_memory_mem_dq[19]
+set_location_assignment PIN_AK27 -to hps_memory_mem_dq[18]
+set_location_assignment PIN_AK26 -to hps_memory_mem_dq[17]
+set_location_assignment PIN_AN27 -to hps_memory_mem_dq[16]
+set_location_assignment PIN_AF23 -to hps_memory_mem_dq[15]
+set_location_assignment PIN_AG23 -to hps_memory_mem_dq[14]
+set_location_assignment PIN_AL23 -to hps_memory_mem_dq[13]
+set_location_assignment PIN_AK23 -to hps_memory_mem_dq[12]
+set_location_assignment PIN_AJ24 -to hps_memory_mem_dq[11]
+set_location_assignment PIN_AK24 -to hps_memory_mem_dq[10]
+set_location_assignment PIN_AK22 -to hps_memory_mem_dq[9]
+set_location_assignment PIN_AF24 -to hps_memory_mem_dq[8]
+set_location_assignment PIN_AN24 -to hps_memory_mem_dq[7]
+set_location_assignment PIN_AL24 -to hps_memory_mem_dq[6]
+set_location_assignment PIN_AL25 -to hps_memory_mem_dq[5]
+set_location_assignment PIN_AP20 -to hps_memory_mem_dq[4]
+set_location_assignment PIN_AP21 -to hps_memory_mem_dq[3]
+set_location_assignment PIN_AP22 -to hps_memory_mem_dq[2]
+set_location_assignment PIN_AN23 -to hps_memory_mem_dq[1]
+set_location_assignment PIN_AM23 -to hps_memory_mem_dq[0]
+
+set_location_assignment PIN_AG25 -to hps_memory_mem_dqs[3]
+set_location_assignment PIN_AF25 -to hps_memory_mem_dqs_n[3]
+set_location_assignment PIN_AM25 -to hps_memory_mem_dqs[2]
+set_location_assignment PIN_AM26 -to hps_memory_mem_dqs_n[2]
+set_location_assignment PIN_AH23 -to hps_memory_mem_dqs[1]
+set_location_assignment PIN_AH24 -to hps_memory_mem_dqs_n[1]
+set_location_assignment PIN_AM22 -to hps_memory_mem_dqs[0]
+set_location_assignment PIN_AN22 -to hps_memory_mem_dqs_n[0]
+set_location_assignment PIN_L23 -to hps_memory_mem_ck
+set_location_assignment PIN_M23 -to hps_memory_mem_ck_n
+set_location_assignment PIN_M24 -to hps_memory_mem_we_n
+set_location_assignment PIN_E26 -to hps_memory_mem_cas_n
+set_location_assignment PIN_F23 -to hps_memory_mem_ras_n
+
+set_location_assignment PIN_AD25 -to hps_memory_mem_dm[3]
+set_location_assignment PIN_AM27 -to hps_memory_mem_dm[2]
+set_location_assignment PIN_AE23 -to hps_memory_mem_dm[1]
+set_location_assignment PIN_AP24 -to hps_memory_mem_dm[0]
+
+												 
+
+set_location_assignment PIN_K25 -to hps_memory_mem_odt
+set_location_assignment PIN_L24 -to hps_memory_mem_reset_n
+set_location_assignment PIN_AL20 -to hps_memory_oct_rzqin
+set_instance_assignment -name IO_STANDARD "1.5 V" -to hps_memory_oct_rzqin
+
+
+set_location_assignment PIN_D5 -to fpga_bresetn
+set_location_assignment PIN_E22 -to hps_memory_mem_a[15]
+
+set_location_assignment PIN_T9 -to sin
+set_location_assignment PIN_Y7 -to BRESETN_FPGA_QSPI
+set_location_assignment PIN_Y6 -to FPGA_FABCLK_25
+
+
+
+
+set_location_assignment PIN_AP19 -to AQC_QTRM_GP1_RST
+set_location_assignment PIN_AN19 -to AQC_QTRM_GP2_RST
+set_location_assignment PIN_AL19 -to AQC_QTRM_GP3_RST
+set_location_assignment PIN_AK19 -to AQC_QTRM_GP4_RST
+set_location_assignment PIN_AJ21 -to AQC_QTRM_GP5_RST
+set_location_assignment PIN_AK21 -to AQC_QTRM_GP6_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP1_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP2_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP3_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP4_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP5_RST
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP6_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_BR_2_RTGU
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_2_RTGU_SP1
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_RTGU_2_AQC_SP1
+
+
+
+
+#set_instance_assignment -name IO_STANDARD LVDS -to FPGA_AQC_QTRM_RST
+set_location_assignment PIN_AC3 -to FPGA_SOB
+set_location_assignment PIN_AC2 -to FPGA_CP
+
+set_location_assignment PIN_AB2 -to FPGA_RTGU_2_AQC_SOB
+set_location_assignment PIN_AB3 -to FPGA_RTGU_2_AQC_CP
+
+set_location_assignment PIN_K23 -to FPGA_AQC_2_RTGU_SP1
+set_location_assignment PIN_J26 -to FPGA_AQC_BR_2_RTGU
+set_location_assignment PIN_J25 -to FPGA_RTGU_2_AQC_SP1
+
+set_location_assignment PIN_AA6 -to FPGA_AQC_CALTRU_TX_RX_MODE_SEL
+
+set_location_assignment PIN_AA8 -to FPGA_AQC_SBU_PATH_SEL
+set_location_assignment PIN_AA9 -to FPGA_AQC_SBU_Q4
+set_location_assignment PIN_AA5 -to FPGA_SBU_AQC_RF_STS
+
+set_location_assignment PIN_A26 -to FPGA_AQC_MON_CP
+set_location_assignment PIN_B23 -to FPGA_AQC_MON_SOB
+set_location_assignment PIN_C23 -to FPGA_AQC_MON_SP1
+
+set_location_assignment PIN_Y2 -to FPGA_TEMP_SCL
+set_location_assignment PIN_AA3 -to FPGA_TEMP_SDA
+set_location_assignment PIN_C27 -to FPGA_TEMP_ALERT
+set_location_assignment PIN_D24 -to FPGA_TEMP_OVERT
+
+set_location_assignment PIN_AA1 -to FPGA_HUM_SCL
+set_location_assignment PIN_Y1 -to FPGA_HUM_SDA
+
+set_location_assignment PIN_AL8 -to FPGA_RS422_TX_1
+set_location_assignment PIN_AL9 -to FPGA_RS422_TX_2
+set_location_assignment PIN_AM7 -to FPGA_RS422_RX_1
+
+set_location_assignment PIN_AM8 -to FPGA_TTL_IN_1
+set_location_assignment PIN_AN8 -to FPGA_TTL_IN_2
+set_location_assignment PIN_AN9 -to FPGA_TTL_IN_3
+set_location_assignment PIN_AP9 -to FPGA_TTL_IN_4
+set_location_assignment PIN_AM6 -to FPGA_TTL_OUT_1
+set_location_assignment PIN_AN5 -to FPGA_TTL_OUT_2
+set_location_assignment PIN_AP5 -to FPGA_TTL_OUT_3
+set_location_assignment PIN_AP6 -to FPGA_TTL_OUT_4
+set_location_assignment PIN_AP7 -to FPGA_TTL_OUT_5
+
+
+set_location_assignment PIN_AM20 -to FPGA_EN_DC_1.8V
+
+
+set_location_assignment PIN_B26 -to FPGA_USER_LED1
+set_location_assignment PIN_B27 -to FPGA_USER_LED2
+
+set_location_assignment PIN_P6 -to PLLOUT_LB_FPGA_IN
+set_location_assignment PIN_R6 -to PLLOUT_LB_FPGA_OUT
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to PLLOUT_LB_FPGA_DIFF_IN
+set_location_assignment PIN_AG17 -to PLLOUT_LB_FPGA_DIFF_IN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to PLLOUT_LB_FPGA_DIFF_OUT
+set_location_assignment PIN_AH18 -to PLLOUT_LB_FPGA_DIFF_OUT
+
+
+
+
+
+
+
+set_location_assignment PIN_U30 -to SFPA_RX_P
+set_location_assignment PIN_U29 -to "SFPA_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPA_RX_P
+set_location_assignment PIN_T32 -to SFPB_RX_P
+set_location_assignment PIN_T31 -to "SFPB_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPB_RX_P
+set_location_assignment PIN_R30 -to SFPC_RX_P
+set_location_assignment PIN_R29 -to "SFPC_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPC_RX_P
+set_location_assignment PIN_P32 -to SFPD_RX_P
+set_location_assignment PIN_P31 -to "SFPD_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPD_RX_P
+set_location_assignment PIN_N30 -to SFPE_RX_P
+set_location_assignment PIN_N29 -to "SFPE_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPE_RX_P
+set_location_assignment PIN_M32 -to SFPF_RX_P
+set_location_assignment PIN_M31 -to "SFPF_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPF_RX_P
+set_location_assignment PIN_L30 -to SFPG_RX_P
+set_location_assignment PIN_L29 -to "SFPG_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPG_RX_P
+set_location_assignment PIN_K32 -to SFPH_RX_P
+set_location_assignment PIN_K31 -to "SFPH_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPH_RX_P
+set_location_assignment PIN_J30 -to SFPI_RX_P
+set_location_assignment PIN_J29 -to "SFPI_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPI_RX_P
+set_location_assignment PIN_G30 -to SFPJ_RX_P
+set_location_assignment PIN_G29 -to "SFPJ_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPJ_RX_P
+set_location_assignment PIN_E30 -to SFPK_RX_P
+set_location_assignment PIN_E29 -to "SFPK_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPK_RX_P
+set_location_assignment PIN_C30 -to SFPL_RX_P
+set_location_assignment PIN_C29 -to "SFPL_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to SFPL_RX_P
+
+set_location_assignment PIN_U34 -to SFPA_TX_P
+set_location_assignment PIN_U33 -to "SFPA_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPA_TX_P
+set_location_assignment PIN_R34 -to SFPB_TX_P
+set_location_assignment PIN_R33 -to "SFPB_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPB_TX_P
+set_location_assignment PIN_N34 -to SFPC_TX_P
+set_location_assignment PIN_N33 -to "SFPC_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPC_TX_P
+set_location_assignment PIN_L34 -to SFPD_TX_P
+set_location_assignment PIN_L33 -to "SFPD_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPD_TX_P
+set_location_assignment PIN_J34 -to SFPE_TX_P
+set_location_assignment PIN_J33 -to "SFPE_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPE_TX_P
+set_location_assignment PIN_G34 -to SFPF_TX_P
+set_location_assignment PIN_G33 -to "SFPF_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPF_TX_P
+set_location_assignment PIN_E34 -to SFPG_TX_P
+set_location_assignment PIN_E33 -to "SFPG_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPG_TX_P
+set_location_assignment PIN_C34 -to SFPH_TX_P
+set_location_assignment PIN_C33 -to "SFPH_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPH_TX_P
+set_location_assignment PIN_H32 -to SFPI_TX_P
+set_location_assignment PIN_H31 -to "SFPI_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPI_TX_P
+set_location_assignment PIN_F32 -to SFPJ_TX_P
+set_location_assignment PIN_F31 -to "SFPJ_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPJ_TX_P
+set_location_assignment PIN_D32 -to SFPK_TX_P
+set_location_assignment PIN_D31 -to "SFPK_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPK_TX_P
+set_location_assignment PIN_B32 -to SFPL_TX_P
+set_location_assignment PIN_B31 -to "SFPL_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to SFPL_TX_P
+
+set_location_assignment PIN_AL30 -to B0_RX_P
+set_location_assignment PIN_AL29 -to "B0_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B0_RX_P
+set_location_assignment PIN_AJ30 -to B1_RX_P
+set_location_assignment PIN_AJ29 -to "B1_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B1_RX_P
+set_location_assignment PIN_AG30 -to B2_RX_P
+set_location_assignment PIN_AG29 -to "B2_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B2_RX_P
+set_location_assignment PIN_AF32 -to B3_RX_P
+set_location_assignment PIN_AF31 -to "B3_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B3_RX_P
+set_location_assignment PIN_AE30 -to B4_RX_P
+set_location_assignment PIN_AE29 -to "B4_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B4_RX_P
+set_location_assignment PIN_AD32 -to B5_RX_P
+set_location_assignment PIN_AD31 -to "B5_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B5_RX_P
+set_location_assignment PIN_AC30 -to B6_RX_P
+set_location_assignment PIN_AC29 -to "B6_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B6_RX_P
+set_location_assignment PIN_AB32 -to B7_RX_P
+set_location_assignment PIN_AB31 -to "B7_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B7_RX_P
+set_location_assignment PIN_AA30 -to B8_RX_P
+set_location_assignment PIN_AA29 -to "B8_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B8_RX_P
+set_location_assignment PIN_Y32 -to B9_RX_P
+set_location_assignment PIN_Y31 -to "B9_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B9_RX_P
+set_location_assignment PIN_W30 -to B10_RX_P
+set_location_assignment PIN_W29 -to "B10_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B10_RX_P
+set_location_assignment PIN_V32 -to B11_RX_P
+set_location_assignment PIN_V31 -to "B11_RX_P(n)"
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to B11_RX_P
+
+set_location_assignment PIN_AP32 -to B0_TX_P
+set_location_assignment PIN_AP31 -to "B0_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B0_TX_P
+set_location_assignment PIN_AM32 -to B1_TX_P
+set_location_assignment PIN_AM31 -to "B1_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B1_TX_P
+set_location_assignment PIN_AK32 -to B2_TX_P
+set_location_assignment PIN_AK31 -to "B2_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B2_TX_P
+set_location_assignment PIN_AH32 -to B3_TX_P
+set_location_assignment PIN_AH31 -to "B3_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B3_TX_P
+set_location_assignment PIN_AN4 -to B4_TX_P
+set_location_assignment PIN_AL34 -to B5_TX_P
+set_location_assignment PIN_AL33 -to "B5_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B5_TX_P
+set_location_assignment PIN_AJ34 -to B6_TX_P
+set_location_assignment PIN_AJ33 -to "B6_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B6_TX_P
+set_location_assignment PIN_AG34 -to B7_TX_P
+set_location_assignment PIN_AG33 -to "B7_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B7_TX_P
+set_location_assignment PIN_AE34 -to B8_TX_P
+set_location_assignment PIN_AE33 -to "B8_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B8_TX_P
+set_location_assignment PIN_AC34 -to B9_TX_P
+set_location_assignment PIN_AC33 -to "B9_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B9_TX_P
+set_location_assignment PIN_AA34 -to B10_TX_P
+set_location_assignment PIN_AA33 -to "B10_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B10_TX_P
+set_location_assignment PIN_W34 -to B11_TX_P
+set_location_assignment PIN_W33 -to "B11_TX_P(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to B11_TX_P
+
+
+#set_instance_assignment -name IO_STANDARD "1.5 V" -to ddr3_pll_outclk0
+
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+
+set_location_assignment PIN_P28 -to REFCLK_GXB_CHBP3
+set_instance_assignment -name IO_STANDARD "CURRENT MODE LOGIC (CML)" -to REFCLK_GXB_CHBP3
+set_location_assignment PIN_P27 -to "REFCLK_GXB_CHBP3(n)"
+
+set_instance_assignment -name IO_STANDARD "1.5 V" -to ddr3_fpga_pll_inclk0
+
+
+set_global_assignment -name GENERATE_RBF_FILE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS OUTPUT DRIVING GROUND"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 1152
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE PARALLEL X32"
+set_global_assignment -name RESERVE_DATA31_THROUGH_DATA16_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA15_THROUGH_DATA8_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA7_THROUGH_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_location_assignment PIN_AJ19 -to clk_25
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_MON_CP
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_MON_SOB
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_MON_SP1
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_TEMP_ALERT
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_TEMP_OVERT
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_USER_LED1
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_USER_LED2
+set_instance_assignment -name IO_STANDARD "1.5 V" -to clk_25
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP1_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP2_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_QTRM52_SDI
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_EN_DC_1.8V
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_QTRM62_SDI
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP3_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP6_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP4_RST
+set_instance_assignment -name IO_STANDARD "1.5 V" -to AQC_QTRM_GP5_RST
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to clk_25 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=65536" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=65536" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to FPGA_AQC_2_RTGU_SP1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to FPGA_AQC_BR_2_RTGU -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to FPGA_AQC_2_RTGU_SP1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to FPGA_AQC_BR_2_RTGU -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to FPGA_CP -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to FPGA_RTGU_2_AQC_CP -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to FPGA_RTGU_2_AQC_SOB -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to FPGA_SOB -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to FPGA_TTL_OUT_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to FPGA_TTL_OUT_2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to FPGA_TTL_OUT_3 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to FPGA_CP -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to FPGA_RTGU_2_AQC_CP -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to FPGA_RTGU_2_AQC_SOB -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to FPGA_SOB -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to FPGA_TTL_OUT_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to FPGA_TTL_OUT_2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to FPGA_TTL_OUT_3 -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_global_assignment -name QSYS_FILE TEMP_SENSE.qsys
+set_global_assignment -name VHDL_FILE goPulse_gen.vhd
+set_global_assignment -name VHDL_FILE edge_detector.vhd
+set_global_assignment -name VHDL_FILE synchronizer.vhd
+set_global_assignment -name QSYS_FILE sdo_fifo.qsys
+set_global_assignment -name SIGNALTAP_FILE cti_tapping.stp
+set_global_assignment -name VHDL_FILE en_gen.vhd
+set_global_assignment -name VHDL_FILE timer_aqc.vhd
+set_global_assignment -name VHDL_FILE sdo_module_aqc.vhd
+set_global_assignment -name VHDL_FILE sdi_module_aqc.vhd
+set_global_assignment -name QSYS_FILE sdi_fifo.qsys
+set_global_assignment -name SOURCE_FILE ghrd_10as066n2.qsf
+set_global_assignment -name VHDL_FILE ghrd_10as066n2_top.vhd
+set_global_assignment -name SDC_FILE ghrd_timing.sdc
+set_global_assignment -name QSYS_FILE ghrd_10as066n2.qsys
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "TEMP_SENSE:TEMP_SENSE_IP|eoc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "ghrd_10as066n2:niosdisp_comp|cp_cntrl_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "ghrd_10as066n2:niosdisp_comp|sob_cntrl_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "goPulse_gen:CP_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "goPulse_gen:CP_generation|work_done" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "goPulse_gen:SOB_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "goPulse_gen:SOB_generation|strobe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "goPulse_gen:TTL_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to pio_temp[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to pio_temp[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to pio_temp[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to pio_temp[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to pio_temp[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to pio_temp[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to pio_temp[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to pio_temp[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to pio_temp[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to pio_temp[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "sdi_fifo:D_qtrm0|wrreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "sdi_module:A_qtrm0|data_in[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "sdi_module:A_qtrm0|data_in[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "sdi_module:A_qtrm0|data_in[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "sdi_module:A_qtrm0|data_in[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "sdi_module:A_qtrm0|data_in[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "sdi_module:A_qtrm0|data_in[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "sdi_module:A_qtrm0|data_in[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "sdi_module:A_qtrm0|data_in[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "sdi_module:A_qtrm0|data_in[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "sdi_module:A_qtrm0|data_in[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "sdi_module:A_qtrm0|data_in[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "sdi_module:A_qtrm0|data_in[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "sdi_module:A_qtrm0|data_in[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "sdi_module:A_qtrm0|data_in[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "sdi_module:A_qtrm0|data_in[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "sdi_module:A_qtrm0|data_in[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "synchronizer:G_qtrm0|out_sync" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "TEMP_SENSE:TEMP_SENSE_IP|eoc" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "ghrd_10as066n2:niosdisp_comp|cp_cntrl_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "ghrd_10as066n2:niosdisp_comp|sob_cntrl_export" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "goPulse_gen:CP_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "goPulse_gen:CP_generation|work_done" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "goPulse_gen:SOB_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "goPulse_gen:SOB_generation|strobe" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "goPulse_gen:TTL_generation|goPulseOut" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to pio_temp[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to pio_temp[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to pio_temp[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to pio_temp[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to pio_temp[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to pio_temp[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to pio_temp[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to pio_temp[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to pio_temp[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to pio_temp[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "sdi_fifo:D_qtrm0|wrreq" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "sdi_module:A_qtrm0|data_in[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "sdi_module:A_qtrm0|data_in[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "sdi_module:A_qtrm0|data_in[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "sdi_module:A_qtrm0|data_in[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "sdi_module:A_qtrm0|data_in[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "sdi_module:A_qtrm0|data_in[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "sdi_module:A_qtrm0|data_in[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "sdi_module:A_qtrm0|data_in[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "sdi_module:A_qtrm0|data_in[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "sdi_module:A_qtrm0|data_in[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "sdi_module:A_qtrm0|data_in[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "sdi_module:A_qtrm0|data_in[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "sdi_module:A_qtrm0|data_in[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "sdi_module:A_qtrm0|data_in[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "sdi_module:A_qtrm0|data_in[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "sdi_module:A_qtrm0|data_in[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "synchronizer:G_qtrm0|out_sync" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=45" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=45" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=45" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=165" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+
+# ===== FPGA_AQC_QTRM_SDI (Serial Data Input) Pin Assignments - VECTORIZED =====
+
+set_location_assignment PIN_AK13 -to FPGA_AQC_QTRM_SDI[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[0]
+
+set_location_assignment PIN_AL13 -to FPGA_AQC_QTRM_SDI[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[1]
+
+set_location_assignment PIN_AP17 -to FPGA_AQC_QTRM_SDI[2]
+
+set_location_assignment PIN_AP16 -to FPGA_AQC_QTRM_SDI[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[3]
+
+set_location_assignment PIN_AP15 -to FPGA_AQC_QTRM_SDI[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[4]
+
+set_location_assignment PIN_AN15 -to FPGA_AQC_QTRM_SDI[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[5]
+
+set_location_assignment PIN_AM13 -to FPGA_AQC_QTRM_SDI[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[6]
+
+set_location_assignment PIN_AN13 -to FPGA_AQC_QTRM_SDI[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[7]
+
+set_location_assignment PIN_AP12 -to FPGA_AQC_QTRM_SDI[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[8]
+
+set_location_assignment PIN_AN12 -to FPGA_AQC_QTRM_SDI[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[9]
+
+set_location_assignment PIN_AP14 -to FPGA_AQC_QTRM_SDI[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[10]
+
+set_location_assignment PIN_AN14 -to FPGA_AQC_QTRM_SDI[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[11]
+
+set_location_assignment PIN_AN18 -to FPGA_AQC_QTRM_SDI[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[12]
+
+set_location_assignment PIN_AM18 -to FPGA_AQC_QTRM_SDI[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[13]
+
+set_location_assignment PIN_AN17 -to FPGA_AQC_QTRM_SDI[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[14]
+
+set_location_assignment PIN_AM17 -to FPGA_AQC_QTRM_SDI[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[15]
+
+set_location_assignment PIN_AK14 -to FPGA_AQC_QTRM_SDI[16]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[16]
+
+set_location_assignment PIN_AL14 -to FPGA_AQC_QTRM_SDI[17]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[17]
+
+set_location_assignment PIN_AM16 -to FPGA_AQC_QTRM_SDI[18]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[18]
+
+set_location_assignment PIN_AL16 -to FPGA_AQC_QTRM_SDI[19]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[19]
+
+set_location_assignment PIN_AL18 -to FPGA_AQC_QTRM_SDI[20]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[20]
+
+set_location_assignment PIN_AL15 -to FPGA_AQC_QTRM_SDI[21]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[21]
+
+set_location_assignment PIN_AM15 -to FPGA_AQC_QTRM_SDI[22]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[22]
+
+set_location_assignment PIN_AH14 -to FPGA_AQC_QTRM_SDI[23]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[23]
+
+set_location_assignment PIN_AJ14 -to FPGA_AQC_QTRM_SDI[24]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[24]
+
+set_location_assignment PIN_AK17 -to FPGA_AQC_QTRM_SDI[25]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[25]
+
+set_location_assignment PIN_AJ17 -to FPGA_AQC_QTRM_SDI[26]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[26]
+
+set_location_assignment PIN_AH15 -to FPGA_AQC_QTRM_SDI[27]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[27]
+
+set_location_assignment PIN_AJ15 -to FPGA_AQC_QTRM_SDI[28]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[28]
+
+set_location_assignment PIN_AJ16 -to FPGA_AQC_QTRM_SDI[29]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[29]
+
+set_location_assignment PIN_AE17 -to FPGA_AQC_QTRM_SDI[30]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[30]
+
+set_location_assignment PIN_AE16 -to FPGA_AQC_QTRM_SDI[31]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[31]
+
+set_location_assignment PIN_AF16 -to FPGA_AQC_QTRM_SDI[32]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[32]
+
+set_location_assignment PIN_AG16 -to FPGA_AQC_QTRM_SDI[33]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[33]
+
+set_location_assignment PIN_AE18 -to FPGA_AQC_QTRM_SDI[34]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[34]
+
+set_location_assignment PIN_AE19 -to FPGA_AQC_QTRM_SDI[35]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[35]
+
+set_location_assignment PIN_AG18 -to FPGA_AQC_QTRM_SDI[36]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[36]
+
+set_location_assignment PIN_AF18 -to FPGA_AQC_QTRM_SDI[37]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[37]
+
+set_location_assignment PIN_AD17 -to FPGA_AQC_QTRM_SDI[38]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[38]
+
+set_location_assignment PIN_AC17 -to FPGA_AQC_QTRM_SDI[39]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[39]
+
+set_location_assignment PIN_AK18 -to FPGA_AQC_QTRM_SDI[40]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[40]
+
+set_location_assignment PIN_AM21 -to FPGA_AQC_QTRM_SDI[41]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_QTRM_SDI[41]
+
+set_location_assignment PIN_AL21 -to FPGA_AQC_QTRM_SDI[42]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_AQC_QTRM_SDI[42]
+
+set_location_assignment PIN_AD19 -to FPGA_AQC_QTRM_SDI[43]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[43]
+
+set_location_assignment PIN_AF19 -to FPGA_AQC_QTRM_SDI[44]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[44]
+
+set_location_assignment PIN_R4 -to FPGA_AQC_QTRM_SDI[45]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[45]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[46]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[47]
+
+set_location_assignment PIN_M13 -to FPGA_AQC_QTRM_SDI[48]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[48]
+
+set_location_assignment PIN_L13 -to FPGA_AQC_QTRM_SDI[49]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[49]
+
+set_location_assignment PIN_H13 -to FPGA_AQC_QTRM_SDI[50]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[50]
+
+set_location_assignment PIN_G13 -to FPGA_AQC_QTRM_SDI[51]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[51]
+
+set_location_assignment PIN_F13 -to FPGA_AQC_QTRM_SDI[52]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[52]
+
+set_location_assignment PIN_E13 -to FPGA_AQC_QTRM_SDI[53]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[53]
+
+set_location_assignment PIN_K13 -to FPGA_AQC_QTRM_SDI[54]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[54]
+
+set_location_assignment PIN_K12 -to FPGA_AQC_QTRM_SDI[55]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[55]
+
+set_location_assignment PIN_J12 -to FPGA_AQC_QTRM_SDI[56]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[56]
+
+set_location_assignment PIN_H12 -to FPGA_AQC_QTRM_SDI[57]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[57]
+
+set_location_assignment PIN_G11 -to FPGA_AQC_QTRM_SDI[58]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[58]
+
+set_location_assignment PIN_G12 -to FPGA_AQC_QTRM_SDI[59]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[59]
+
+set_location_assignment PIN_E12 -to FPGA_AQC_QTRM_SDI[60]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[60]
+
+set_location_assignment PIN_D12 -to FPGA_AQC_QTRM_SDI[61]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[61]
+
+set_location_assignment PIN_C13 -to FPGA_AQC_QTRM_SDI[62]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[62]
+
+set_location_assignment PIN_C12 -to FPGA_AQC_QTRM_SDI[63]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[63]
+
+set_location_assignment PIN_E11 -to FPGA_AQC_QTRM_SDI[64]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[64]
+
+set_location_assignment PIN_F11 -to FPGA_AQC_QTRM_SDI[65]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[65]
+
+set_location_assignment PIN_B10 -to FPGA_AQC_QTRM_SDI[66]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[66]
+
+set_location_assignment PIN_A11 -to FPGA_AQC_QTRM_SDI[67]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[67]
+
+set_location_assignment PIN_A10 -to FPGA_AQC_QTRM_SDI[68]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[68]
+
+set_location_assignment PIN_E9 -to FPGA_AQC_QTRM_SDI[69]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[69]
+
+set_location_assignment PIN_E8 -to FPGA_AQC_QTRM_SDI[70]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[70]
+
+set_location_assignment PIN_C9 -to FPGA_AQC_QTRM_SDI[71]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[71]
+
+set_location_assignment PIN_D9 -to FPGA_AQC_QTRM_SDI[72]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[72]
+
+set_location_assignment PIN_B7 -to FPGA_AQC_QTRM_SDI[73]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[73]
+
+set_location_assignment PIN_C7 -to FPGA_AQC_QTRM_SDI[74]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[74]
+
+set_location_assignment PIN_A6 -to FPGA_AQC_QTRM_SDI[75]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[75]
+
+set_location_assignment PIN_B6 -to FPGA_AQC_QTRM_SDI[76]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[76]
+
+set_location_assignment PIN_D7 -to FPGA_AQC_QTRM_SDI[77]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[77]
+
+set_location_assignment PIN_D6 -to FPGA_AQC_QTRM_SDI[78]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[78]
+
+set_location_assignment PIN_C4 -to FPGA_AQC_QTRM_SDI[79]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[79]
+
+set_location_assignment PIN_D4 -to FPGA_AQC_QTRM_SDI[80]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[80]
+
+set_location_assignment PIN_A4 -to FPGA_AQC_QTRM_SDI[81]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[81]
+
+set_location_assignment PIN_A3 -to FPGA_AQC_QTRM_SDI[82]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[82]
+
+set_location_assignment PIN_A5 -to FPGA_AQC_QTRM_SDI[83]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[83]
+
+set_location_assignment PIN_B5 -to FPGA_AQC_QTRM_SDI[84]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[84]
+
+set_location_assignment PIN_C5 -to FPGA_AQC_QTRM_SDI[85]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[85]
+
+set_location_assignment PIN_B12 -to FPGA_AQC_QTRM_SDI[86]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[86]
+
+set_location_assignment PIN_B11 -to FPGA_AQC_QTRM_SDI[87]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[87]
+
+set_location_assignment PIN_B8 -to FPGA_AQC_QTRM_SDI[88]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[88]
+
+set_location_assignment PIN_C8 -to FPGA_AQC_QTRM_SDI[89]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[89]
+
+
+# ===== FPGA_QTRM_AQC_SDO (Serial Data Output) Pin Assignments - VECTORIZED =====
+
+set_location_assignment PIN_AD2 -to FPGA_QTRM_AQC_SDO[0]
+
+set_location_assignment PIN_AD1 -to FPGA_QTRM_AQC_SDO[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[1]
+
+set_location_assignment PIN_AB10 -to FPGA_QTRM_AQC_SDO[2]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[2]
+
+set_location_assignment PIN_AB11 -to FPGA_QTRM_AQC_SDO[3]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[3]
+
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[4]
+
+set_location_assignment PIN_AM7 -to FPGA_QTRM_AQC_SDO[5]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[5]
+
+set_location_assignment PIN_AL9 -to FPGA_QTRM_AQC_SDO[6]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[6]
+
+set_location_assignment PIN_AL8 -to FPGA_QTRM_AQC_SDO[7]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[7]
+
+set_location_assignment PIN_AP9 -to FPGA_QTRM_AQC_SDO[8]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[8]
+
+set_location_assignment PIN_AN9 -to FPGA_QTRM_AQC_SDO[9]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[9]
+
+set_location_assignment PIN_AN8 -to FPGA_QTRM_AQC_SDO[10]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[10]
+
+set_location_assignment PIN_AM8 -to FPGA_QTRM_AQC_SDO[11]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[11]
+
+set_location_assignment PIN_AP7 -to FPGA_QTRM_AQC_SDO[12]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[12]
+
+set_location_assignment PIN_AP6 -to FPGA_QTRM_AQC_SDO[13]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[13]
+
+set_location_assignment PIN_AP5 -to FPGA_QTRM_AQC_SDO[14]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[14]
+
+set_location_assignment PIN_AN5 -to FPGA_QTRM_AQC_SDO[15]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[15]
+
+set_location_assignment PIN_R7 -to FPGA_QTRM_AQC_SDO[16]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[16]
+
+set_location_assignment PIN_R8 -to FPGA_QTRM_AQC_SDO[17]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[17]
+
+set_location_assignment PIN_L8 -to FPGA_QTRM_AQC_SDO[18]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[18]
+
+set_location_assignment PIN_M7 -to FPGA_QTRM_AQC_SDO[19]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[19]
+
+set_location_assignment PIN_M6 -to FPGA_QTRM_AQC_SDO[20]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[20]
+
+set_location_assignment PIN_J5 -to FPGA_QTRM_AQC_SDO[21]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[21]
+
+set_location_assignment PIN_J4 -to FPGA_QTRM_AQC_SDO[22]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[22]
+
+set_location_assignment PIN_N5 -to FPGA_QTRM_AQC_SDO[23]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[23]
+
+set_location_assignment PIN_N4 -to FPGA_QTRM_AQC_SDO[24]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[24]
+
+set_location_assignment PIN_K4 -to FPGA_QTRM_AQC_SDO[25]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[25]
+
+set_location_assignment PIN_L4 -to FPGA_QTRM_AQC_SDO[26]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[26]
+
+set_location_assignment PIN_M3 -to FPGA_QTRM_AQC_SDO[27]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[27]
+
+set_location_assignment PIN_M2 -to FPGA_QTRM_AQC_SDO[28]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[28]
+
+set_location_assignment PIN_N3 -to FPGA_QTRM_AQC_SDO[29]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[29]
+
+set_location_assignment PIN_N2 -to FPGA_QTRM_AQC_SDO[30]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[30]
+
+set_location_assignment PIN_K3 -to FPGA_QTRM_AQC_SDO[31]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[31]
+
+set_location_assignment PIN_L3 -to FPGA_QTRM_AQC_SDO[32]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[32]
+
+set_location_assignment PIN_J2 -to FPGA_QTRM_AQC_SDO[33]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[33]
+
+set_location_assignment PIN_J1 -to FPGA_QTRM_AQC_SDO[34]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[34]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[35]
+
+set_location_assignment PIN_K1 -to FPGA_QTRM_AQC_SDO[36]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[36]
+
+set_location_assignment PIN_L1 -to FPGA_QTRM_AQC_SDO[37]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[37]
+
+set_location_assignment PIN_M1 -to FPGA_QTRM_AQC_SDO[38]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[38]
+
+set_location_assignment PIN_J11 -to FPGA_QTRM_AQC_SDO[39]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[39]
+
+set_location_assignment PIN_K11 -to FPGA_QTRM_AQC_SDO[40]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[40]
+
+set_location_assignment PIN_F10 -to FPGA_QTRM_AQC_SDO[41]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[41]
+
+set_location_assignment PIN_G10 -to FPGA_QTRM_AQC_SDO[42]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[42]
+
+set_location_assignment PIN_F9 -to FPGA_QTRM_AQC_SDO[43]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[43]
+
+set_location_assignment PIN_F8 -to FPGA_QTRM_AQC_SDO[44]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[44]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[45]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[46]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[47]
+
+set_location_assignment PIN_H10 -to FPGA_QTRM_AQC_SDO[48]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[48]
+
+set_location_assignment PIN_J10 -to FPGA_QTRM_AQC_SDO[49]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[49]
+
+set_location_assignment PIN_H8 -to FPGA_QTRM_AQC_SDO[50]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[50]
+
+set_location_assignment PIN_H9 -to FPGA_QTRM_AQC_SDO[51]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[51]
+
+set_location_assignment PIN_G7 -to FPGA_QTRM_AQC_SDO[52]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[52]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[53]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[54]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[55]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[56]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[57]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[58]
+
+set_location_assignment PIN_G8 -to FPGA_QTRM_AQC_SDO[59]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[59]
+
+set_location_assignment PIN_B3 -to FPGA_QTRM_AQC_SDO[60]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[60]
+
+set_location_assignment PIN_C3 -to FPGA_QTRM_AQC_SDO[61]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[61]
+
+set_location_assignment PIN_E4 -to FPGA_QTRM_AQC_SDO[62]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[62]
+
+set_location_assignment PIN_F4 -to FPGA_QTRM_AQC_SDO[63]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[63]
+
+set_location_assignment PIN_E6 -to FPGA_QTRM_AQC_SDO[64]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[64]
+
+set_location_assignment PIN_E7 -to FPGA_QTRM_AQC_SDO[65]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[65]
+
+set_location_assignment PIN_E3 -to FPGA_QTRM_AQC_SDO[66]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[66]
+
+set_location_assignment PIN_H2 -to FPGA_QTRM_AQC_SDO[67]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[67]
+
+set_location_assignment PIN_H3 -to FPGA_QTRM_AQC_SDO[68]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[68]
+
+set_location_assignment PIN_G3 -to FPGA_QTRM_AQC_SDO[69]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[69]
+
+set_location_assignment PIN_G2 -to FPGA_QTRM_AQC_SDO[70]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[70]
+
+set_location_assignment PIN_H4 -to FPGA_QTRM_AQC_SDO[71]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[71]
+
+set_location_assignment PIN_H5 -to FPGA_QTRM_AQC_SDO[72]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[72]
+
+set_location_assignment PIN_J9 -to FPGA_QTRM_AQC_SDO[73]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[73]
+
+set_location_assignment PIN_K9 -to FPGA_QTRM_AQC_SDO[74]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[74]
+
+set_location_assignment PIN_L10 -to FPGA_QTRM_AQC_SDO[75]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[75]
+
+set_location_assignment PIN_L9 -to FPGA_QTRM_AQC_SDO[76]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[76]
+
+set_location_assignment PIN_H7 -to FPGA_QTRM_AQC_SDO[77]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[77]
+
+set_location_assignment PIN_J6 -to FPGA_QTRM_AQC_SDO[78]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[78]
+
+set_location_assignment PIN_J7 -to FPGA_QTRM_AQC_SDO[79]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[79]
+
+set_location_assignment PIN_K8 -to FPGA_QTRM_AQC_SDO[80]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[80]
+
+set_location_assignment PIN_L11 -to FPGA_QTRM_AQC_SDO[81]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[81]
+
+set_location_assignment PIN_AA5 -to FPGA_QTRM_AQC_SDO[82]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[82]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[83]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[84]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[85]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[86]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_QTRM_AQC_SDO[87]
+
+set_location_assignment PIN_V8 -to FPGA_QTRM_AQC_SDO[88]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[88]
+
+set_location_assignment PIN_U10 -to FPGA_QTRM_AQC_SDO[89]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[89]
+
+
+set_instance_assignment -name IO_STANDARD "1.2 V" -to CLOCK_I2C_SDA_1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "PLLOUT_LB_FPGA_DIFF_OUT(n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "PLLOUT_LB_FPGA_DIFF_IN(n)"
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[21]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[22]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[20]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dm[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[16]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[19]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs_n[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dm[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs_n[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[23]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[18]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[17]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[31]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[28]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[26]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[30]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[27]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[25]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs_n[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL" -to hps_memory_mem_dqs_n[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[24]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dm[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dm[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15" -to hps_memory_mem_dq[29]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_we_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_memory_mem_ck_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to hps_memory_mem_ck
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_odt
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_cs_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_cke
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_ras_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_cas_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_a[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_ba[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_ba[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to hps_memory_mem_ba[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SBU_AQC_TEMP_STS
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SBU_AQC_DATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_TEMP_SCL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_HUM_SDA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[17]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[16]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_CAL_SW[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SOB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_CP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_RTGU_2_AQC_CP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_RTGU_2_AQC_SOB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_SBU_AQC_RF_STS
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_TEMP_SDA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_HUM_SCL
+set_location_assignment PIN_M11 -to FPGA_AQC_QTRM_SDI[90]
+set_location_assignment PIN_M10 -to FPGA_AQC_QTRM_SDI[91]
+set_location_assignment PIN_N10 -to FPGA_AQC_QTRM_SDI[92]
+set_location_assignment PIN_AB1 -to FPGA_AQC_QTRM_SDI[93]
+set_location_assignment PIN_AA4 -to FPGA_AQC_QTRM_SDI[94]
+set_location_assignment PIN_P4 -to FPGA_AQC_QTRM_SDI[95]
+set_location_assignment PIN_AN7 -to FPGA_QTRM_AQC_SDO[4]
+set_location_assignment PIN_U3 -to FPGA_QTRM_AQC_SDO[90]
+set_location_assignment PIN_U2 -to FPGA_QTRM_AQC_SDO[91]
+set_location_assignment PIN_Y9 -to FPGA_QTRM_AQC_SDO[92]
+set_location_assignment PIN_Y8 -to FPGA_QTRM_AQC_SDO[93]
+set_location_assignment PIN_W7 -to FPGA_QTRM_AQC_SDO[94]
+set_location_assignment PIN_W6 -to FPGA_QTRM_AQC_SDO[95]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[90]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[91]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_AQC_QTRM_SDI[92]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to FPGA_QTRM_AQC_SDO[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/cti_tapping_auto_stripped.stp
