@@ -11,7 +11,7 @@ port
 (     
 	clk 			: in std_logic;		-- 50 MHz Clk
 	rst 			: in std_logic;		-- when s/w is pressed, 'rst' will be pulled to '0'
-	data_in			: in std_logic_vector(15 downto 0);
+	data_in			: in std_logic_vector(7 downto 0);
 	fifo_rd_rqst	: out std_logic;
 	tx_start		: in std_logic;
 	sdi_out			: out std_logic;
@@ -25,7 +25,7 @@ architecture sdi_module of sdi_module is
    signal state_reg, state_next: state_type;
    signal d_reg, d_next: unsigned(9 downto 0);			-- it is delay register. some time acts as bit duration (200ns) for 5 Mbps.
    signal n_reg, n_next: unsigned(3 downto 0);			-- to keep track of number of bits
-   signal w_reg, w_next: std_logic_vector(15 downto 0); -- whatever data to be transmitted, will be loaded in this... word register
+   signal w_reg, w_next: std_logic_vector(7 downto 0); -- whatever data to be transmitted, will be loaded in this... word register
    signal tx_done_reg, tx_done_next: std_logic;   
    signal sdi_reg, sdi_next: std_logic;
 	signal fifo_rd_rqst_reg, fifo_rd_rqst_next: std_logic;
@@ -104,8 +104,8 @@ begin
 --               if d_reg = 9 then
                if d_reg = 4 then
                   d_next <= (others=>'0');
-                  w_next <= '0' & w_reg(15 downto 1);
-                  if n_reg = 15 then
+                  w_next <= '0' & w_reg(7 downto 1);
+                  if n_reg = 7 then
                      state_next <= stop ;
                   else
                      n_next <= n_reg + 1;
@@ -146,7 +146,7 @@ end sdi_module;
 -- (     
 	-- clk 			: in std_logic;
 	-- rst 			: in std_logic;
-	-- data_in		: in std_logic_vector(15 downto 0);
+	-- data_in		: in std_logic_vector(7 downto 0);
 	-- tx_start		: in std_logic;
 	-- sdo_out		: out std_logic;
 	-- tx_done_tick : out std_logic;

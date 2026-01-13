@@ -82,7 +82,7 @@
   <parameter name="GUI_RAM_BLOCK_TYPE" value="Auto" />
   <parameter name="GUI_UNDERFLOW_CHECKING" value="false" />
   <parameter name="GUI_UsedW" value="true" />
-  <parameter name="GUI_Width" value="16" />
+  <parameter name="GUI_Width" value="8" />
   <parameter name="GUI_dc_aclr" value="false" />
   <parameter name="GUI_delaypipe" value="4" />
   <parameter name="GUI_diff_widths" value="false" />

@@ -11,7 +11,7 @@ port
 	clk 			: in std_logic;		-- 50 MHz Clk
 	rst 			: in std_logic;		-- when s/w is pressed, 'rst' will be pulled to '0'
 	sdo_in			: in std_logic;
-	data_reg		: out std_logic_vector(15 downto 0);	
+	data_reg		: out std_logic_vector(7 downto 0);	
 	rx_done_tick	: out std_logic     
 );
 end sdo_module;
@@ -22,7 +22,7 @@ architecture sdo_module of sdo_module is
    signal state_reg, state_next: state_type;
    signal d_reg, d_next: unsigned(3 downto 0);			-- it is delay register. some time acts as bit duration (200ns) for 5 Mbps.
    signal n_reg, n_next: unsigned(3 downto 0);			-- to keep track of number of bits
-   signal b_reg, b_next: std_logic_vector(15 downto 0); -- whatever data to be received, will be available in this.
+   signal b_reg, b_next: std_logic_vector(7 downto 0); -- whatever data to be received, will be available in this.
    
 begin
 
@@ -74,8 +74,8 @@ begin
 --               if d_reg = 9 then
                if d_reg = 4 then
                   d_next <= (others=>'0');
-                  b_next <= sdo_in & b_reg(15 downto 1) ;
-                  if n_reg = 15 then
+                  b_next <= sdo_in & b_reg(7 downto 1) ;
+                  if n_reg = 7 then
                      state_next <= stop;
                   else
                      n_next <= n_reg + 1;
@@ -112,7 +112,7 @@ end sdo_module;
 --	clk 		: in std_logic;		
 --	rst 		: in std_logic;		
 --	sdo_in		: in std_logic;	
---  data_reg	: out std_logic_vector(15 downto 0);
+--  data_reg	: out std_logic_vector(7 downto 0);
 --	rx_done_tick: out std_logic     
 --);
 --end component sdo_module;

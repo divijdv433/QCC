@@ -10980,7 +10980,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="16" />
+  <parameter name="width" value="8" />
  </module>
  <module
    name="PIO_SDI_DATA_QTRM_1"
@@ -12758,7 +12758,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="16" />
+  <parameter name="width" value="8" />
  </module>
  <module
    name="PIO_SDO_DATA_QTRM_1"

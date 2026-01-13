@@ -170,487 +170,489 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 				sdi_wr_export                              : out   std_logic;                                        -- export
 				sdi_full_export                            : in    std_logic                     := 'X';             -- export
 				
-				sdo_data_qtrm0_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+								
+				sdo_data_qtrm0_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_empty_qtrm0_export                     : in    std_logic                     := 'X';             -- export
-				sdi_data_qtrm0_export                      : out   std_logic_vector(15 downto 0);                    -- export
+				sdi_data_qtrm0_export                      : out   std_logic_vector(7 downto 0);                    -- export
 				sdo_rr_qtrm0_export                        : out   std_logic;                                        -- export
 				
-				sdi_data_qtrm1_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm1_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm1_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm1_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm1_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm1_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm2_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm2_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm2_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm2_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm2_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm2_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm3_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm3_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm3_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm3_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm3_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm3_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm4_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm4_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm4_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm4_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm4_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm4_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm5_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm5_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm5_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm5_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm5_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm5_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm6_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm6_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm6_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm6_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm6_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm6_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm7_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm7_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm7_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm7_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm7_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm7_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm8_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm8_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm8_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm8_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm8_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm8_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm9_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm9_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm9_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm9_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm9_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm9_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm10_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm10_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm10_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm10_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm10_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm10_export                     : in    std_logic                     := 'X';              -- export
 
 				
-				sdi_data_qtrm11_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm11_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm11_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm11_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm11_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm11_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm12_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm12_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm12_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm12_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm12_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm12_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm13_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm13_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm13_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm13_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm13_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm13_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm14_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm14_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm14_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm14_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm14_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm14_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm15_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm15_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm15_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm15_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm15_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm15_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm16_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm16_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm16_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm16_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm16_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm16_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm17_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm17_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm17_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm17_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm17_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm17_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm18_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm18_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm18_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm18_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm18_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm18_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm19_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm19_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm19_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm19_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm19_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm19_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm20_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm20_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm20_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm20_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm20_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm20_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm21_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm21_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm21_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm21_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm21_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm21_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm22_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm22_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm22_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm22_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm22_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm22_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm23_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm23_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm23_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm23_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm23_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm23_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm24_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm24_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm24_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm24_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm24_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm24_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm25_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm25_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm25_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm25_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm25_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm25_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm26_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm26_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm26_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm26_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm26_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm26_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm27_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm27_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm27_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm27_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm27_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm27_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm28_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm28_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm28_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm28_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm28_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm28_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm29_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm29_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm29_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm29_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm29_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm29_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm30_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm30_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm30_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm30_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm30_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm30_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm31_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm31_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm31_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm31_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm31_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm31_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm32_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm32_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm32_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm32_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm32_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm32_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm33_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm33_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm33_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm33_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm33_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm33_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm34_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm34_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm34_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm34_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm34_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm34_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm35_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm35_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm35_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm35_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm35_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm35_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm36_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm36_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm36_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm36_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm36_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm36_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm37_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm37_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm37_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm37_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm37_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm37_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm38_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm38_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm38_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm38_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm38_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm38_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm39_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm39_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm39_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm39_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm39_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm39_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm40_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm40_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm40_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm40_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm40_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm40_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm41_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm41_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm41_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm41_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm41_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm41_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm42_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm42_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm42_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm42_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm42_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm42_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm43_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm43_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm43_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm43_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm43_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm43_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm44_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm44_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm44_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm44_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm44_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm44_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm45_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm45_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm45_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm45_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm45_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm45_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm46_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm46_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm46_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm46_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm46_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm46_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm47_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm47_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm47_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm47_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm47_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm47_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm48_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm48_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm48_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm48_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm48_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm48_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm49_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm49_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm49_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm49_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm49_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm49_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm50_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm50_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm50_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm50_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm50_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm50_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm51_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm51_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm51_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm51_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm51_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm51_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm52_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm52_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm52_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm52_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm52_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm52_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm53_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm53_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm53_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm53_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm53_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm53_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm54_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm54_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm54_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm54_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm54_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm54_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm55_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm55_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm55_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm55_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm55_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm55_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm56_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm56_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm56_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm56_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm56_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm56_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm57_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm57_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm57_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm57_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm57_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm57_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm58_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm58_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm58_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm58_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm58_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm58_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm59_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm59_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm59_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm59_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm59_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm59_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm60_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm60_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm60_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm60_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm60_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm60_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm61_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm61_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm61_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm61_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm61_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm61_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm62_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm62_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm62_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm62_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm62_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm62_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm63_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm63_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm63_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm63_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm63_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm63_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm64_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm64_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm64_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm64_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm64_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm64_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm65_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm65_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm65_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm65_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm65_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm65_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm66_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm66_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm66_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm66_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm66_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm66_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm67_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm67_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm67_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm67_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm67_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm67_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm68_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm68_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm68_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm68_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm68_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm68_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm69_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm69_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm69_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm69_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm69_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm69_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm70_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm70_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm70_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm70_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm70_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm70_export                     : in    std_logic                     := 'X';              -- export		
 
-				sdi_data_qtrm71_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm71_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm71_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm71_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm71_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm71_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm72_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm72_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm72_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm72_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm72_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm72_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm73_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm73_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm73_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm73_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm73_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm73_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm74_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm74_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm74_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm74_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm74_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm74_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm75_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm75_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm75_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm75_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm75_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm75_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm76_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm76_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm76_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm76_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm76_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm76_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm77_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm77_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm77_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm77_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm77_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm77_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm78_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm78_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm78_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm78_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm78_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm78_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm79_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm79_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm79_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm79_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm79_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm79_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm80_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm80_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm80_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm80_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm80_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm80_export                     : in    std_logic                     := 'X';              -- export		
 
-				sdi_data_qtrm81_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm81_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm81_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm81_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm81_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm81_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm82_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm82_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm82_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm82_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm82_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm82_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm83_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm83_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm83_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm83_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm83_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm83_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm84_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm84_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm84_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm84_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm84_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm84_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm85_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm85_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm85_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm85_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm85_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm85_export                     : in    std_logic                     := 'X';             -- export
 
-				sdi_data_qtrm86_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm86_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm86_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm86_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm86_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm86_export                     : in    std_logic                     := 'X';              -- export
 
-				sdi_data_qtrm87_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm87_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm87_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm87_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm87_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm87_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm88_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm88_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm88_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm88_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm88_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm88_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm89_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm89_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm89_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm89_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm89_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm89_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm90_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm90_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm90_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm90_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm90_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm90_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm91_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm91_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm91_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm91_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm91_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm91_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm92_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm92_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm92_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm92_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm92_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm92_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm93_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm93_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm93_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm93_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm93_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm93_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm94_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm94_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm94_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm94_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm94_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm94_export                     : in    std_logic                     := 'X';              -- export
 				
-				sdi_data_qtrm95_export                      : out   std_logic_vector(15 downto 0);                    -- export
-				sdo_data_qtrm95_export                      : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+				sdi_data_qtrm95_export                      : out   std_logic_vector(7 downto 0);                    -- export
+				sdo_data_qtrm95_export                      : in    std_logic_vector(7 downto 0) := (others => 'X'); -- export
 				sdo_rr_qtrm95_export                        : out   std_logic;                                        -- export
 				sdo_empty_qtrm95_export                     : in    std_logic                     := 'X';              -- export
 				
+						
 				
 				sdo_fifo_reset_export                       : out   std_logic;                                         -- export
 				
@@ -693,7 +695,7 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 	(     
 		clk 				: in std_logic;
 		rst 				: in std_logic;
-		data_in				: in std_logic_vector(15 downto 0);
+		data_in				: in std_logic_vector(7 downto 0);
 		fifo_rd_rqst			: out std_logic;
 		tx_start			: in std_logic;
 		sdi_out				: out std_logic;
@@ -707,7 +709,7 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 		clk 				: in std_logic;		
 		rst 				: in std_logic;		
 		sdo_in				: in std_logic;	
-		data_reg			: out std_logic_vector(15 downto 0);
+		data_reg			: out std_logic_vector(7 downto 0);
 		rx_done_tick			: out std_logic     
 	);
 	end component sdo_module;
@@ -727,12 +729,12 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 	component sdi_fifo is
 	port 
 	(
-		data  : in  std_logic_vector(15 downto 0); 	-- datain
+		data  : in  std_logic_vector(7 downto 0); 	-- datain
 		wrreq : in  std_logic;             				-- wrreq
 		rdreq : in  std_logic;             				-- rdreq
 		clock : in  std_logic;             				-- clk
 		aclr  : in  std_logic;             				-- aclr
-		q     : out std_logic_vector(15 downto 0);   -- dataout
+		q     : out std_logic_vector(7 downto 0);   -- dataout
 		full  : out std_logic;                       -- full
 		empty : out std_logic                        -- empty
 	);
@@ -742,12 +744,12 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 	component sdo_fifo is
 	port 
 	(
-		data  : in  std_logic_vector(15 downto 0); 	-- datain
+		data  : in  std_logic_vector(7 downto 0); 	-- datain
 		wrreq : in  std_logic;             				-- wrreq
 		rdreq : in  std_logic;             				-- rdreq
 		clock : in  std_logic;             				-- clk
 		aclr  : in  std_logic;             				-- aclr
-		q     : out std_logic_vector(15 downto 0);   -- dataout
+		q     : out std_logic_vector(7 downto 0);   -- dataout
 		full  : out std_logic;                       -- full
 		empty : out std_logic                        -- empty
 	);
@@ -800,7 +802,7 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 	 
  ----------------------------common signals START-------------------------------------
 		signal clk_sig, rst_sig: std_logic;	
-		signal data_in: std_logic_vector(15 downto 0);
+		signal data_in: std_logic_vector(7 downto 0);
 		signal tx_start, tx_done_tick: std_logic;	
 		signal max_cnt	: std_logic_vector(27 downto 0);
 
@@ -845,7 +847,7 @@ ARCHITECTURE SYN OF ghrd_10as066n2_top is
 		signal corectl, eoc,temp_rdy : std_logic := '0';   
 ----------------------------common signals END-------------------------------------	
 -------------------Signals----------------------------
-TYPE t_qtrm_data_type IS ARRAY (0 TO QTRM_COUNT_const) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
+TYPE t_qtrm_data_type IS ARRAY (0 TO QTRM_COUNT_const) OF STD_LOGIC_VECTOR(7 DOWNTO 0);
 
 ------------------------------------------------------
 		signal qtrm_sdi_fifo_data_out, qtrm_sdi_fifo_data_in	: t_qtrm_data_type;		
